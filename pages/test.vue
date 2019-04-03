@@ -13,14 +13,17 @@
   </section>
 </template>
 
-<script>
+<script lang='ts'>
 import axios from 'axios'
+import { Component, Vue } from 'vue-property-decorator'
 
-export default {
+@Component({
   async asyncData (context) {
     let { data } = await axios.get('https://jsonplaceholder.typicode.com/users')
     return { users: data }
   }
+})
+export default class Test extends Vue {
 }
 </script>
 
