@@ -19,6 +19,7 @@
           target="_blank"
           class="button--grey"
         >GitHub</a>
+        <a href='test' class="button--green">テストページへ</a>
       </div>
     </div>
   </section>
